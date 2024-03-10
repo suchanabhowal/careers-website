@@ -1,5 +1,6 @@
 from flask import Flask,render_template,jsonify
-app = Flask(__name__)
+app = Flask(__name__)  #app is the name odf the actual variable that contains the flask application that u want to run.  for production,inside start command write 'gunicorn app:app'  
+#instead of python write gunicorn, gunicorn is for deployment, python for production. first 'app' is name of the python file i wan to run.second 'app' is is th ename of the flaskapplication
 jobs=[
     {
         'id': 1,
